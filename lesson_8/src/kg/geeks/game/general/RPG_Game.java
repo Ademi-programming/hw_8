@@ -16,8 +16,11 @@ public class RPG_Game {
         Medic doc = new Medic("Haus", 250, 5, 15);
         Medic assistant = new Medic("Levin", 300, 5, 5);
         Berserk berserk = new Berserk("Valera", 240, 10);
+        Reaper reaper = new Reaper("Konstantin" , 265, 20, 280);
+        Kamikadze kamikadze = new Kamikadze("Mafia", 500, 0, "Critical Damage", 4);
+        Hacker hacker = new Hacker("Ademi", 280, 20, "Hacking");
 
-        Hero[] heroes = {warrior1, doc, warrior2, magic, berserk, assistant};
+        Hero[] heroes = {warrior1, doc, warrior2, magic, berserk, assistant, reaper, kamikadze, hacker};
 
         printStatistics(boss, heroes);
 

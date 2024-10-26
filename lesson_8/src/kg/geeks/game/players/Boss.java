@@ -31,6 +31,13 @@ public class Boss extends GameEntity {
         this.defence = variants[randomIndex];
     }
 
+    public void takeDamage(int damage) {
+        setHealth(getHealth() - damage);
+        if (getHealth() < 0) {
+            setHealth(0);
+        }
+    }
+
     public SuperAbility getDefence() {
         return defence;
     }
